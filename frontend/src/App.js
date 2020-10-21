@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import './App.css';
-import HomeScreen from './components/screens/HomeScreen';
+import HomeScreen from './screens/HomeScreen';
 
 const App = () => {
   return (
