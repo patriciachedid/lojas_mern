@@ -1,27 +1,14 @@
 import React from 'react'
 import {Row, Col, Card} from 'react-bootstrap'
 import products from '../products'
-
-// export const Product = ({product}) => {
-//     return (
-//         <Card className='rounded my-3 p-3'>
-//             <Card.Img src={product.img} variant='top'></Card.Img>
-//             <Card.body>
-//                 <Card.title>
-//                     <strong>{product.name}</strong>
-//                 </Card.title>
-//                 <Card.text as='div'>
-
-//                 </Card.text>
-//             </Card.body>
-//         </Card>
-//     )
-// }
+import { Link } from 'react-router-dom';
+import Ratings from './Ratings';
 
 const Product = ({ product }) => {
     return (
       <>
         <Card className="rounded my-3 p-3">
+          <Link to={`/product/${product._id}`}></Link>
           <Card.Img src={product.image} variant="top"></Card.Img>
           <div className="card-img-overlay d-flex justify-content-end">
             <a href="#" className="card-link text-danger like">
@@ -40,6 +27,11 @@ const Product = ({ product }) => {
               </a>
             </div>
           </div>
+          <Ratings
+            value={product.rating}
+            color='gold'
+            text={`${product.numReviews} avaliações`}>
+          </Ratings>
         </Card>
       </>
     );

@@ -8,9 +8,8 @@ const HomeScreen = () => {
     <>
       <h1 className='mt'>Últimos lançamentos</h1>
       <Row>
-        {
-            products.map((p) => (
-                <Col lg="4">
+        {products.map((p) => (
+                <Col key={p._id} sm={12} md={6} lg= {4} xl={3}>
                     <Product product={p} />
                 </Col>
             ))
