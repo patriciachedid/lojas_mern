@@ -1,0 +1,27 @@
+{
+  "name": "lojas-mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patriciachedid/lojas_mern.git"
+  },
+  "keywords": [
+    "04041994kurt"
+  ],
+  "author": "Patricia Chedid",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patriciachedid/lojas_mern/issues"
+  },
+  "homepage": "https://github.com/patriciachedid/lojas_mern#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
